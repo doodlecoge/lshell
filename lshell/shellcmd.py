@@ -451,6 +451,10 @@ class ShellCmd(cmd.Cmd, object):
     def _timererror(self, signum, frame):
         raise LshellTimeOut("lshell timer timeout")
 
+    def help_version(self):
+        self.stdout.write("""Display KMS version
+Usage: version""")
+
 
 class LshellTimeOut(Exception):
     """ Custum exception used for timer timeout
