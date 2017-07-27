@@ -50,7 +50,7 @@ def warn_count(messagetype, command, conf, strict=None, ssh=None):
                 sys.stderr.write('This incident has been reported.\n')
         else:
             if not conf['quiet']:
-                log.critical('*** forbidden %s: %s'
+                log.critical('Unknown %s \'%s\''
                              % (messagetype, command))
 
     # if you are here, means that you did something wrong. Return 1.

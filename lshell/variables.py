@@ -49,8 +49,7 @@ usage = """Usage: lshell [OPTIONS]
 """ % configfile
 
 # Intro Text
-intro = """You are in a limited shell.
-Type '?' or 'help' to get the list of allowed commands"""
+intro = """Type 'help' to list available commands"""
 # configuration parameters
 configparams = ['config=',
                 'help',
@@ -90,13 +89,7 @@ configparams = ['config=',
                 'disable_exit=',
                 'include_dir=']
 
-builtins_list = ['cd',
-                 'clear',
-                 'exit',
-                 'export',
-                 'history',
-                 'lpath',
-                 'lsudo']
+builtins_list = ['exit']
 
 FORBIDDEN_ENVIRON = (
     'LD_AOUT_LIBRARY_PATH', 'LD_AOUT_PRELOAD', 'LD_LIBRARY_PATH', 'LD_PRELOAD',
